@@ -71,7 +71,7 @@ class MealDetailScreen extends StatelessWidget {
             // buildContainer(
             Container(
               margin: EdgeInsets.all(10),
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.symmetric(horizontal: 10),
               height: MediaQuery.of(context).size.shortestSide,
               width: double.infinity,
               child: ListView.builder(
@@ -97,6 +97,12 @@ class MealDetailScreen extends StatelessWidget {
             // ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.delete_outline),
+        onPressed: () {
+          Navigator.of(context).pop(mealId);
+        },
       ),
     );
   }

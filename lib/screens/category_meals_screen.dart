@@ -3,12 +3,15 @@ import '../widgets/meal_item.dart';
 
 import '../dummy_data.dart';
 
-class CategoryMealsScreen extends StatelessWidget {
+class CategoryMealsScreen extends StatefulWidget {
   static const routeName = '/category-meals';
-  // final String categoryId;
-  // final String categoryTitle;
 
-  // CategoryMealsScreen(this.categoryId, this.categoryTitle);
+  @override
+  State<CategoryMealsScreen> createState() => _CategoryMealsScreenState();
+}
+
+class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
+  // void _removeMeal(String id) {}
 
   @override
   Widget build(BuildContext context) {
